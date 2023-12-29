@@ -1,0 +1,231 @@
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  /* SCROLL BAR */
+  ::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000; /* Background color of the track (scrollbar area not covered by the handle) */
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Color of the scrollbar handle */
+    border-radius: 5px; /* Border radius of the scrollbar handle */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Color of the scrollbar handle on hover */
+  }
+
+  :root{
+    --width: 25px;
+    --color : #121212;
+  }
+
+  .invert{
+    filter: invert(1);
+  }
+
+  body{
+    background-color: black;
+  }
+
+  /* LEFT UPPER PART CSS */
+  .container{
+    display: flex;
+  }
+
+  .left{
+    
+    width: 25vw;
+   
+  }
+
+  .homeSearch{
+    background-color: var(--color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+ 
+  }
+  .logoSvg{
+    width: 83px;
+  }
+  .homeSvg{
+      width: var(--width);
+  }
+  .searchSvg{
+      width: var(--width);
+  }
+  .homeSearch ul li{
+    color: #b3b3b3;
+    list-style-type: none;
+    display: flex;
+    gap: 22px;
+    padding: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  .homeSearch ul li :hover{
+    color: white;
+  }
+  .fontSize{
+    font-size: 1rem;
+  }
+
+
+  /* LEFT DOWN SIDE */
+.library{
+    background-color: var(--color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 7px;
+    position: relative;
+    height: 420.6px;
+}
+
+.logoPlusHeading{
+display: flex;
+justify-content: space-between;
+}
+.logoPlusHeadingItem{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 7px;
+}
+.logoPlusHeadingItem span{
+    color: #b3b3b3;
+}
+.createPlayListLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+.playListSvg{
+    width: var(--width);
+}
+.plusSvg{
+    width: var(--width);
+    cursor: pointer;
+}
+
+
+.DisplayPlayListSong{
+    background-color: #242424;
+    border: 1px solid #2b2a2a;
+    padding: 7px;
+    margin-top: 13px;
+    max-height: 223px;
+    overflow-y: auto;
+
+}
+.songFlexBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.svgWithSongName{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+.musicSvg{
+    width: var(--width);
+}
+.playNow{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.playNow span{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    width: 56px;
+}
+.playNowSvg{
+    width: 20px;
+}
+.songNameFont{
+    font-size: 0.6rem;
+    color: white;
+    width: 119px;
+    display: flex;
+    align-items: center;
+}
+
+.leftSideBarFooter{
+
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 0;
+}
+.FooterLinks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.FooterLinks a {
+   text-decoration: none;
+} 
+.FooterLinks a span{
+   color: white;
+   font-size: 10px;
+
+} 
+
+.languageBtn{
+    margin-top: 10px;
+}
+.languageBtn button{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 7px;
+    width: 90px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.languageBtn button:hover{
+    border: 1px solid white;
+    background-color: #1f1a1a;
+    /* font-size: 0.8rem; */
+
+}
+.languageSvg{
+    width: 18px;
+}
+
+
+
+
+  .right{
+    
+    width: 75vw;
+    margin: 10px;
+  }
+
